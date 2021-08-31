@@ -221,7 +221,8 @@ if(LIBIGL_WITH_CGAL)
   # CGAL Core is needed for
   # `Exact_predicates_exact_constructions_kernel_with_sqrt`
   if(NOT TARGET CGAL::CGAL)
-    set(CGAL_DIR "${LIBIGL_EXTERNAL}/cgal")
+    #set(CGAL_DIR "${LIBIGL_EXTERNAL}/cgal")
+    set(CGAL_DIR "cgal")
     igl_download_cgal()
     igl_download_cgal_deps()
     message("BOOST_ROOT: ${BOOST_ROOT}")

@@ -217,6 +217,7 @@ endif()
 ################################################################################
 ### Compile the CGAL part ###
 if(LIBIGL_WITH_CGAL)
+#[=[
   # Try to find the CGAL library
   # CGAL Core is needed for
   # `Exact_predicates_exact_constructions_kernel_with_sqrt`
@@ -232,6 +233,9 @@ if(LIBIGL_WITH_CGAL)
 
     find_package(CGAL CONFIG COMPONENTS Core PATHS ${CGAL_DIR} NO_DEFAULT_PATH)
   endif()
+  #]=]
+  list(APPEND CMAKE_PREFIX_PATH $ENV{HOME}/libigl/external/cgal)
+  find_package(CGAL CONFIG REQUIRED COMPONENTS Core)# PATHS ${CGAL_DIR} NO_DEFAULT_PATH)
 
   # If CGAL has been found, then build the libigl module
   if(TARGET CGAL::CGAL AND TARGET CGAL::CGAL_Core)

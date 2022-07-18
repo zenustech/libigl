@@ -35,8 +35,8 @@ include_directories("${JMESH_DIR}/include")
 add_subdirectory("${JMESHEXT_DIR}")
 add_definitions(-DUSE_FORTRAN_BLAS)
 if(APPLE)
-  set(CMAKE_CXX_LINK_FLAGS "-framework Accelerate")
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=native")
+  #set(CMAKE_CXX_LINK_FLAGS "-framework Accelerate")
+  #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=native")
 endif()
 
 

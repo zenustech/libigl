@@ -3,10 +3,10 @@ cmake_minimum_required(VERSION 3.10)
 project(voro++ VERSION 0.4.6 LANGUAGES CXX)
 set(SOVERSION "0")
 
-if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CXX_FLAGS)
-  #release comes with -O3 by default
-  set(CMAKE_BUILD_TYPE Release CACHE STRING "Choose the type of build, options are: None Debug Release RelWithDebInfo MinSizeRel." FORCE)
-endif(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CXX_FLAGS)
+#if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CXX_FLAGS)
+  ##release comes with -O3 by default
+  #set(CMAKE_BUILD_TYPE Release CACHE STRING "Choose the type of build, options are: None Debug Release RelWithDebInfo MinSizeRel." FORCE)
+#endif(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CXX_FLAGS)
 
 ########################################################################
 # User input options                                                   #

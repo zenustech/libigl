@@ -169,14 +169,14 @@ IF (USE_XSDK_DEFAULTS)
   
   # Set XSDK defaults for other CMake variables
   
-  IF ("${BUILD_SHARED_LIBS}"  STREQUAL  "")
-    MESSAGE("-- " "XSDK: Setting default BUILD_SHARED_LIBS=TRUE")
-    SET(BUILD_SHARED_LIBS  TRUE  CACHE  BOOL  "Set by default in XSDK mode")
-  ENDIF()
+  #IF ("${BUILD_SHARED_LIBS}"  STREQUAL  "")
+    #MESSAGE("-- " "XSDK: Setting default BUILD_SHARED_LIBS=TRUE")
+    #SET(BUILD_SHARED_LIBS  TRUE  CACHE  BOOL  "Set by default in XSDK mode")
+  #ENDIF()
   
-  IF ("${CMAKE_BUILD_TYPE}"  STREQUAL  "")
-    MESSAGE("-- " "XSDK: Setting default CMAKE_BUILD_TYPE=DEBUG")
-    SET(CMAKE_BUILD_TYPE  DEBUG  CACHE  STRING  "Set by default in XSDK mode")
-  ENDIF()
+  #IF ("${CMAKE_BUILD_TYPE}"  STREQUAL  "")
+    #MESSAGE("-- " "XSDK: Setting default CMAKE_BUILD_TYPE=DEBUG")
+    #SET(CMAKE_BUILD_TYPE  DEBUG  CACHE  STRING  "Set by default in XSDK mode")
+  #ENDIF()
 
 ENDIF()

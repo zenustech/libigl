@@ -76,6 +76,9 @@ set(sources "")
       ztrsv.c
       zgerc.c
       zher2.c
+      input_error.c
+      scomplex.c
+      dcomplex.c
     )
 #endif()
 
